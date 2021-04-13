@@ -4,6 +4,9 @@ let store = {
       messages: [],
       newMessage: "",
     },
+    datePage: {
+        currentDate: '',
+    }
   },
 
   getState() {
@@ -31,6 +34,15 @@ let store = {
   subscribe(observer) {
     this._rerenderPage = observer;
   },
+
+  getCurrentDate(){
+    debugger;
+    setInterval(() => {
+      let fullDate = new Date();
+
+      return fullDate;
+    }, 1000);
+  }
 };
 
 window.store = store;

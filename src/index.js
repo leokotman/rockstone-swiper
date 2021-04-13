@@ -12,6 +12,7 @@ let rerenderEntirePage = (state) => {
         state={state}
         addMessage={store.addMessage.bind(store)}
         updateNewMessageText={store.updateNewMessageText.bind(store)}
+        currentDate={store.getCurrentDate()}
       />
     </React.StrictMode>,
     document.getElementById("root")
