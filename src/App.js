@@ -1,5 +1,5 @@
 import './App.css';
-import InputMessagePage from './components/InputMessagePage';
+import InputMessagePage from "./components/MessagesPage/InputMessagePage";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Carousel} from "react-bootstrap";
@@ -7,7 +7,7 @@ import {Carousel} from "react-bootstrap";
 function App(props) {
   return (
     <div className="App">
-      <Carousel interval={null} controls={false}>
+      <Carousel interval={null} controls={false} touch={true} keyboard={true}>
         <Carousel.Item>
           <InputMessagePage
             inputMessagePage={props.state.inputMessagePage}
