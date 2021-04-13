@@ -3,14 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store, { addMessage } from "./store";
+import store from "./store";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={store.state} addMessage={addMessage}  />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+let rerenderEntirePage = (state) => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App
+        state={state}
+        addMessage={store.addMessage.bind(store)}
+        updateNewMessageText={store.updateNewMessageText.bind(store)}
+      />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+};
+
+rerenderEntirePage(store.getState());
+store.subscribe(rerenderEntirePage);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,22 +1,39 @@
 let store = {
-  state: {
+  _state: {
     inputMessagePage: {
       messages: [],
+      newMessage: "",
     },
   },
 
   getState() {
     return this._state;
   },
+  _rerenderPage() {
+    console.log("state is changed");
+  },
+
+  addMessage() {
+    debugger;
+    let newMessage = {
+      id: this._state.inputMessagePage.messages.length,
+      message: this._state.inputMessagePage.newMessage,
+    };
+    this._state.inputMessagePage.messages.push(newMessage);
+    this._state.inputMessagePage.newMessage = "";
+    this._rerenderPage(this._state);
+  },
+
+  updateNewMessageText(newMessage) {
+    this._state.inputMessagePage.newMessage = newMessage;
+    this._rerenderPage(this._state);
+  },
+  subscribe(observer) {
+    this._rerenderPage = observer;
+  },
 };
 
-export let addMessage = (messageText) => {
-  debugger;
-  let newMessage = {
-    id: store.state.inputMessagePage.messages.length,
-    message: messageText,
-  };
-  store.state.inputMessagePage.messages.push(newMessage);
-};
+window.store = store;
+
 
 export default store;
