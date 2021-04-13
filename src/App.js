@@ -1,33 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import InputMessagePage from './components/InputMessagePage';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Carousel} from "react-bootstrap";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Carousel interval={null}>
+      
+      <Carousel interval={null} controls={false}>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
+            <InputMessagePage state={props.state} addMessage={props.addMessage} />
+            {/* <img className="d-block w-100" alt="First slide" /> */}
+            
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -36,15 +25,6 @@ function App() {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
