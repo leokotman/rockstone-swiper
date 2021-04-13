@@ -8,7 +8,13 @@ import DatePage from './components/DatePage/DatePage';
 function App(props) {
   return (
     <div className="App">
-      <Carousel interval={null} controls={false} touch={true} keyboard={true} className='h-75'>
+      <Carousel
+        interval={null}
+        controls={false}
+        touch={true}
+        keyboard={true}
+        className="h-75"
+      >
         <Carousel.Item>
           <InputMessagePage
             inputMessagePage={props.state.inputMessagePage}
@@ -17,7 +23,7 @@ function App(props) {
           />
         </Carousel.Item>
         <Carousel.Item>
-          <DatePage currentDate={props.currentDate}/>
+          <DatePage />
         </Carousel.Item>
       </Carousel>
     </div>
