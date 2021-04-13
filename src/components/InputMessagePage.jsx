@@ -22,7 +22,7 @@ function InputMessagePage(props) {
 
   return (
     <div className={style.page_container}>
-      <label for="newMessage">
+      <label for="newMessage" className={style.input_message}>
         <InputGroup>
           <Form.Control
             as="textarea"
@@ -37,7 +37,7 @@ function InputMessagePage(props) {
           </Button>
         </InputGroup>
       </label>
-      {messageElements}
+      <div className={style.messages}>{messageElements}</div>
     </div>
   );
 }
