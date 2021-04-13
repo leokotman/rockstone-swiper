@@ -1,5 +1,7 @@
-.message_animated{
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 1rem;
+.date_page {
+    background-color: moccasin;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
