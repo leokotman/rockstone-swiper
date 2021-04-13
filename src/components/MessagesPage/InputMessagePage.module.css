@@ -1,0 +1,17 @@
+.page_container {
+    background-color:lightskyblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_message{
+    height: 50vh;
+    padding: 4rem;
+}
+
+.messages {
+    width: max-content;
+}
