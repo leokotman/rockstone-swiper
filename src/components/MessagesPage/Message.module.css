@@ -12,8 +12,8 @@
  */
  @-webkit-keyframes slide-bottom {
     0% {
-      -webkit-transform: translateY(-20vh);
-              transform: translateY(-20vh);
+      -webkit-transform: translateY(-50vh);
+              transform: translateY(-50vh);
     }
     100% {
       -webkit-transform: translateY(0);
@@ -22,8 +22,8 @@
   }
   @keyframes slide-bottom {
     0% {
-        -webkit-transform: translateY(-20vh);
-                transform: translateY(-20vh);
+        -webkit-transform: translateY(-50vh);
+                transform: translateY(-50vh);
     }
     100% {
         -webkit-transform: translateY(0);
@@ -35,8 +35,8 @@
     background-color: #fff;
     border-radius: 1rem;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     -webkit-animation: slide-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: slide-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-   
+    scroll-snap-align: start;
 }
