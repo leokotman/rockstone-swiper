@@ -1,5 +1,6 @@
 .page_container {
     background-color:lightskyblue;
+    font-family: 'Satisfy', cursive;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,9 +8,23 @@
     align-items: center;
 }
 
+.input_group {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+.input_group button {
+    font-family: 'Montserrat';
+    font-size: .8rem;
+    padding: .3rem;
+    height: max-content;
+}
+
 .input_message{
     height: 50vh;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .messages {

@@ -22,17 +22,22 @@ function InputMessagePage(props) {
 
   return (
     <div className={style.page_container}>
-      <label for="newMessage" className={style.input_message}>
-        <InputGroup>
+      <label for="new_message" className={style.input_message}>
+        <InputGroup className={style.input_group}>
           <Form.Control
             as="textarea"
             ref={newMessageText}
-            id="newMessage"
+            id="new_message"
             onChange={onChangeMessageText}
             value={props.inputMessagePage.newMessage}
-            placeholder="Your new animated message"
+            placeholder="New message"
+            className="w-100"
           />
-          <Button variant="primary" onClick={addMessage}>
+          <Button
+            variant="primary"
+            onClick={addMessage}
+            className='input_button'
+          >
             Add your message
           </Button>
         </InputGroup>
