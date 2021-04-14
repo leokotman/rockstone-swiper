@@ -2,7 +2,7 @@ import React from "react";
 import {Button, Form, InputGroup} from "react-bootstrap";
 
 import style from "./InputMessagePage.module.css";
-import Message from "./Message";
+import MessagesContainer from "./MessagesContainer";
 
 function InputMessagePage(props) {
   let newMessageText = React.createRef();
@@ -15,10 +15,6 @@ function InputMessagePage(props) {
     let message = newMessageText.current.value;
     props.updateNewMessageText(message);
   };
-
-  let messageElements = props.inputMessagePage.messages.map((message) => (
-    <Message message={message.message} />
-  ));
 
   return (
     <div className={style.page_container}>
@@ -36,13 +32,13 @@ function InputMessagePage(props) {
           <Button
             variant="primary"
             onClick={addMessage}
-            className='input_button'
+            className="input_button"
           >
             Add your message
           </Button>
         </InputGroup>
       </label>
-      <div className={style.messages}>{messageElements}</div>
+      <MessagesContainer messages={props.inputMessagePage.messages} />
     </div>
   );
 }
