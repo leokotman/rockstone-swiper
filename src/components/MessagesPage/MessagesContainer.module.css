@@ -1,6 +1,6 @@
 .messages {
-    width: max-content;
-    max-height: 50vh;
+    width: 40vw;
+    max-height: 60vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }

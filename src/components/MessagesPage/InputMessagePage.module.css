@@ -6,6 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-image: url('../../rockstone-logo.png');
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    background-position: 5% 1%;
 }
 
 .input_group {
