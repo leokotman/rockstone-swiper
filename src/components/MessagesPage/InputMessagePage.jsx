@@ -31,7 +31,6 @@ function InputMessagePage(props) {
             onChange={onChangeMessageText}
             value={props.inputMessagePage.newMessage}
             placeholder="Your new animated message"
-            class="w-60"
           />
           <Button variant="primary" onClick={addMessage}>
             Add your message

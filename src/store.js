@@ -31,6 +31,7 @@ let store = {
   subscribe(observer) {
     this._rerenderPage = observer;
   },
+
 };
 
 window.store = store;
