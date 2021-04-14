@@ -14,7 +14,6 @@ let store = {
   },
 
   addMessage() {
-    debugger;
     let newMessage = {
       id: this._state.inputMessagePage.messages.length,
       message: this._state.inputMessagePage.newMessage,
@@ -31,7 +30,6 @@ let store = {
   subscribe(observer) {
     this._rerenderPage = observer;
   },
-
 };
 
 window.store = store;
