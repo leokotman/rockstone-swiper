@@ -1,5 +1,6 @@
 .date_page {
-    background-color: moccasin;
+    background-color: rgba(248, 233, 220, 0.959);
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
