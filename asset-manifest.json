@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/rockstone-swiper/static/css/main.2bce603f.chunk.css",
-    "main.js": "/rockstone-swiper/static/js/main.2a5304f1.chunk.js",
-    "main.js.map": "/rockstone-swiper/static/js/main.2a5304f1.chunk.js.map",
+    "main.css": "/rockstone-swiper/static/css/main.d0b9c724.chunk.css",
+    "main.js": "/rockstone-swiper/static/js/main.889608bb.chunk.js",
+    "main.js.map": "/rockstone-swiper/static/js/main.889608bb.chunk.js.map",
     "runtime-main.js": "/rockstone-swiper/static/js/runtime-main.27f1cb31.js",
     "runtime-main.js.map": "/rockstone-swiper/static/js/runtime-main.27f1cb31.js.map",
     "static/css/2.150d169a.chunk.css": "/rockstone-swiper/static/css/2.150d169a.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.b368ca87.chunk.js.map": "/rockstone-swiper/static/js/3.b368ca87.chunk.js.map",
     "index.html": "/rockstone-swiper/index.html",
     "static/css/2.150d169a.chunk.css.map": "/rockstone-swiper/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.2bce603f.chunk.css.map": "/rockstone-swiper/static/css/main.2bce603f.chunk.css.map",
+    "static/css/main.d0b9c724.chunk.css.map": "/rockstone-swiper/static/css/main.d0b9c724.chunk.css.map",
     "static/js/2.523acf85.chunk.js.LICENSE.txt": "/rockstone-swiper/static/js/2.523acf85.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.27f1cb31.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.523acf85.chunk.js",
-    "static/css/main.2bce603f.chunk.css",
-    "static/js/main.2a5304f1.chunk.js"
+    "static/css/main.d0b9c724.chunk.css",
+    "static/js/main.889608bb.chunk.js"
   ]
 }
