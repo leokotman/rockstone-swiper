@@ -18,6 +18,7 @@ function InputMessagePage(props) {
 
   return (
     <div className={style.page_container}>
+      <h2>Swipe me</h2>
       <label for="new_message" className={style.input_message}>
         <InputGroup className={style.input_group}>
           <Form.Control
