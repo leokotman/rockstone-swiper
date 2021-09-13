@@ -4,10 +4,6 @@ import {Button, Form, InputGroup} from "react-bootstrap";
 import style from "./InputMessagePage.module.css";
 import MessagesContainer from "./MessagesContainer";
 
-document.onload(
-  alert("Using laptop, open DevTools with mobile adaptive to swipe page")
-);
-
 function InputMessagePage(props) {
   let newMessageText = React.createRef();
 

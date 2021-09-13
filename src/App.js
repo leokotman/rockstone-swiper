@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Carousel} from "react-bootstrap";
 import DatePage from './components/DatePage/DatePage';
 
+alert("Using laptop, open DevTools with mobile adaptive to swipe page");
+
 function App(props) {
   return (
     <div className="App">
