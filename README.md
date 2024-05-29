@@ -1,3 +1,5 @@
+deployed version: https://leokotman.github.io/rockstone-swiper/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
